@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Apache.Arrow" Version="16.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RiskDataPlatform.Core\RiskDataPlatform.Core.csproj" />
+    <ProjectReference Include="..\RiskDataPlatform.Infrastructure\RiskDataPlatform.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
