@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hQQIPEGDvM8=",
+  "success": true,
+  "projectFilePath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/microsoft.orleans.serialization.abstractions/8.2.0/microsoft.orleans.serialization.abstractions.8.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
