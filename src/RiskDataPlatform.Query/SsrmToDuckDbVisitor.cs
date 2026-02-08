@@ -248,6 +248,11 @@ public sealed class SsrmToDuckDbVisitor
 
         var type = typeElement.GetString();
         
+        if (type == "inRange")
+        {
+            return BuildInRangeFilter(colName, filterDef);
+        }
+
         if (!filterDef.TryGetProperty("filter", out var filterElement))
         {
             return string.Empty;
@@ -265,7 +270,6 @@ public sealed class SsrmToDuckDbVisitor
             "lessThanOrEqual" => $"{colName} <= ?",
             "greaterThan" => $"{colName} > ?",
             "greaterThanOrEqual" => $"{colName} >= ?",
-            "inRange" => BuildInRangeFilter(colName, filterDef),
             _ => string.Empty
         };
     }
