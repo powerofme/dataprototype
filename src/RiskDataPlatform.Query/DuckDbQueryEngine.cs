@@ -141,13 +141,15 @@ public sealed class DuckDbQueryEngine : IReportQueryEngine, IDisposable
         {
             var tableName = GetTableName(tenantId, executionId, deskId, reportType);
 
-            var sql = BuildTimelineQuery(tableName, request);
+            var (sql, parameters) = BuildTimelineQuery(tableName, request);
 
             using var command = _connection.CreateCommand();
             command.CommandText = sql;
 
-            command.Parameters.Add(CreateParameter(command, request.StartDate));
-            command.Parameters.Add(CreateParameter(command, request.EndDate));
+            foreach (var param in parameters)
+            {
+                command.Parameters.Add(CreateParameter(command, param));
+            }
 
             var recordBatch = await ExecuteQueryToRecordBatchAsync(command, cancellationToken);
 
@@ -173,7 +175,7 @@ public sealed class DuckDbQueryEngine : IReportQueryEngine, IDisposable
             var keyColumns = await GetKeyColumnsAsync(baseTableName, cancellationToken);
             var valueColumns = await GetNumericColumnsAsync(baseTableName, cancellationToken);
 
-            var comparisonSql = _comparisonBuilder.BuildComparisonQuery(
+            var (comparisonSql, comparisonParams) = _comparisonBuilder.BuildComparisonQuery(
                 baseTableName,
                 compareTableName,
                 keyColumns,
@@ -184,6 +186,10 @@ public sealed class DuckDbQueryEngine : IReportQueryEngine, IDisposable
             using (var command = _connection.CreateCommand())
             {
                 command.CommandText = $"CREATE TEMP TABLE {SanitizeIdentifier(comparisonTableName)} AS {comparisonSql}";
+                foreach (var param in comparisonParams)
+                {
+                    command.Parameters.Add(CreateParameter(command, param));
+                }
                 await command.ExecuteNonQueryAsync(cancellationToken);
             }
 
@@ -419,8 +425,9 @@ public sealed class DuckDbQueryEngine : IReportQueryEngine, IDisposable
         return Convert.ToInt32(result);
     }
 
-    private string BuildTimelineQuery(string tableName, TimelineRequest request)
+    private (string sql, List<object> parameters) BuildTimelineQuery(string tableName, TimelineRequest request)
     {
+        var parameters = new List<object>();
         var measures = request.Measures ?? new List<string> { "*" };
         var selectCols = measures.Select(m => m == "*" ? m : $"SUM({SanitizeIdentifier(m)}) AS {SanitizeIdentifier(m)}");
 
@@ -431,16 +438,22 @@ SELECT
 FROM {SanitizeIdentifier(tableName)}
 WHERE timestamp BETWEEN ? AND ?";
 
+        parameters.Add(request.StartDate);
+        parameters.Add(request.EndDate);
+
         if (request.Filters != null && request.Filters.Count > 0)
         {
             var filterClauses = request.Filters.Select(f =>
-                $"{SanitizeIdentifier(f.Key)} = '{f.Value}'");
+            {
+                parameters.Add(f.Value);
+                return $"{SanitizeIdentifier(f.Key)} = ?";
+            });
             sql += $"\nAND {string.Join(" AND ", filterClauses)}";
         }
 
         sql += $"\nGROUP BY period\nORDER BY period";
 
-        return sql;
+        return (sql, parameters);
     }
 
     private async Task<List<string>> GetKeyColumnsAsync(string tableName, CancellationToken cancellationToken)
@@ -491,7 +504,7 @@ WHERE timestamp BETWEEN ? AND ?";
 
     private async Task<int> GetTotalDifferencesAsync(string tableName, CancellationToken cancellationToken)
     {
-        var sql = $"SELECT COUNT(*) FROM {SanitizeIdentifier(tableName)} WHERE \"_change_type\" != 'CHANGED' OR \"_change_type\" = 'CHANGED'";
+        var sql = $"SELECT COUNT(*) FROM {SanitizeIdentifier(tableName)}";
         using var command = _connection.CreateCommand();
         command.CommandText = sql;
 
@@ -505,11 +518,16 @@ WHERE timestamp BETWEEN ? AND ?";
         double threshold,
         CancellationToken cancellationToken)
     {
-        var sql = _comparisonBuilder.BuildSignificantDifferencesQuery(tableName, valueColumns, threshold);
+        var (sql, parameters) = _comparisonBuilder.BuildSignificantDifferencesQuery(tableName, valueColumns, threshold);
         var countSql = $"SELECT COUNT(*) FROM ({sql}) AS subquery";
 
         using var command = _connection.CreateCommand();
         command.CommandText = countSql;
+
+        foreach (var param in parameters)
+        {
+            command.Parameters.Add(CreateParameter(command, param));
+        }
 
         var result = await command.ExecuteScalarAsync(cancellationToken);
         return Convert.ToInt32(result);

@@ -5,7 +5,7 @@ namespace RiskDataPlatform.Query;
 
 public sealed class ComparisonQueryBuilder
 {
-    public string BuildComparisonQuery(
+    public (string sql, List<object> parameters) BuildComparisonQuery(
         string baseTableName,
         string compareTableName,
         List<string> keyColumns,
@@ -13,6 +13,7 @@ public sealed class ComparisonQueryBuilder
         double? threshold = null)
     {
         var sql = new StringBuilder();
+        var parameters = new List<object>();
 
         sql.AppendLine("WITH base AS (");
         sql.AppendLine($"  SELECT * FROM {SanitizeIdentifier(baseTableName)}");
@@ -65,14 +66,15 @@ public sealed class ComparisonQueryBuilder
             var thresholdConditions = valueColumns.Select(col =>
             {
                 var sanitizedCol = SanitizeIdentifier(col);
-                return $"ABS({sanitizedCol}_delta) >= {threshold.Value}";
+                parameters.Add(threshold.Value);
+                return $"ABS({sanitizedCol}_delta) >= ?";
             });
 
             sql.Append(string.Join(" OR ", thresholdConditions));
             sql.Append(")");
         }
 
-        return sql.ToString();
+        return (sql.ToString(), parameters);
     }
 
     public string BuildDifferenceSummaryQuery(
@@ -177,24 +179,26 @@ public sealed class ComparisonQueryBuilder
         return sql.ToString();
     }
 
-    public string BuildSignificantDifferencesQuery(
+    public (string sql, List<object> parameters) BuildSignificantDifferencesQuery(
         string comparisonTableName,
         List<string> valueColumns,
         double threshold)
     {
         var sql = new StringBuilder();
+        var parameters = new List<object>();
 
         sql.Append($"SELECT * FROM {SanitizeIdentifier(comparisonTableName)} WHERE ");
 
         var conditions = valueColumns.Select(col =>
         {
             var sanitizedCol = SanitizeIdentifier(col);
-            return $"ABS({sanitizedCol}_delta) >= {threshold}";
+            parameters.Add(threshold);
+            return $"ABS({sanitizedCol}_delta) >= ?";
         });
 
         sql.Append(string.Join(" OR ", conditions));
 
-        return sql.ToString();
+        return (sql.ToString(), parameters);
     }
 
     public string BuildDifferencesByBookQuery(
