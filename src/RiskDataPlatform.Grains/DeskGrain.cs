@@ -149,7 +149,7 @@ public sealed class DeskGrain : Grain, IDeskGrain
         return Task.FromResult(new Dictionary<string, bool>(_state.State.IncrementalStatus));
     }
 
-    public async Task AddExecutionAsync(Execution execution)
+    internal async Task AddExecutionAsync(Execution execution)
     {
         using var activity = Telemetry.Grains.StartActivity("DeskGrain.AddExecution");
         activity?.SetTag("tenantId", _tenantId);
