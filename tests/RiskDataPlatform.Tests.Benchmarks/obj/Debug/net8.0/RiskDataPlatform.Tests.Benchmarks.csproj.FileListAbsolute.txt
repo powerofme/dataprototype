@@ -1,0 +1,15 @@
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/bin/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/bin/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.deps.json
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/bin/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.runtimeconfig.json
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/bin/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.dll
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/bin/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.pdb
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.AssemblyInfoInputs.cache
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.AssemblyInfo.cs
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.csproj.CoreCompileInputs.cache
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.sourcelink.json
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.dll
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/refint/RiskDataPlatform.Tests.Benchmarks.dll
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.pdb
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/RiskDataPlatform.Tests.Benchmarks.genruntimeconfig.cache
+/home/runner/work/dataprototype/dataprototype/tests/RiskDataPlatform.Tests.Benchmarks/obj/Debug/net8.0/ref/RiskDataPlatform.Tests.Benchmarks.dll
