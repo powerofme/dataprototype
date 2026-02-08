@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RiskDataPlatform.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13613fa0e216aa012d4c95f786f0eff5dde6738d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cc9534ddaedea35aafb34f0e4b6a31d82fbe33e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RiskDataPlatform.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RiskDataPlatform.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

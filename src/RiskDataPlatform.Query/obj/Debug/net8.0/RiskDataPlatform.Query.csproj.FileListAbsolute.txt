@@ -10,3 +10,11 @@
 /home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/obj/Debug/net8.0/refint/RiskDataPlatform.Query.dll
 /home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/obj/Debug/net8.0/RiskDataPlatform.Query.pdb
 /home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/obj/Debug/net8.0/ref/RiskDataPlatform.Query.dll
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/obj/Debug/net8.0/RiskDataPlatform.Query.csproj.AssemblyReference.cache
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/bin/Debug/net8.0/RiskDataPlatform.Arrow.dll
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/bin/Debug/net8.0/RiskDataPlatform.Core.dll
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/bin/Debug/net8.0/RiskDataPlatform.Infrastructure.dll
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/bin/Debug/net8.0/RiskDataPlatform.Core.pdb
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/bin/Debug/net8.0/RiskDataPlatform.Arrow.pdb
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/bin/Debug/net8.0/RiskDataPlatform.Infrastructure.pdb
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/obj/Debug/net8.0/RiskData.FEBC7C95.Up2Date
