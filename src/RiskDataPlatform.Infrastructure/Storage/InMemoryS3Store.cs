@@ -65,7 +65,8 @@ public sealed class InMemoryS3Store : IS3Store
             bucketDict.TryGetValue(key, out var storedObject))
         {
             _logger.LogInformation("GetObject found: bucket={Bucket}, key={Key}, size={Size} bytes", bucket, key, storedObject.Content.Length);
-            Stream result = new MemoryStream(storedObject.Content);
+            // Caller is responsible for disposing the returned stream
+            Stream result = new MemoryStream(storedObject.Content, writable: false);
             return Task.FromResult<Stream?>(result);
         }
 
