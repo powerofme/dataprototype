@@ -8,4 +8,13 @@
     <UserSecretsId>f10d2fd9-64b0-42d3-bc0b-2d6eb908e59a</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="13.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RiskDataPlatform.Api\RiskDataPlatform.Api.csproj" />
+    <ProjectReference Include="..\RiskDataPlatform.ServiceDefaults\RiskDataPlatform.ServiceDefaults.csproj" IsAspireProjectResource="false" />
+  </ItemGroup>
+
 </Project>

@@ -52,6 +52,12 @@ public static class Extensions
             logging.IncludeScopes = true;
         });
 
+        // Configure Orleans logging noise filtering
+        builder.Logging.AddFilter("Orleans.Runtime", LogLevel.Warning);
+        builder.Logging.AddFilter("Orleans.Messaging", LogLevel.Warning);
+        builder.Logging.AddFilter("Orleans.Networking", LogLevel.Warning);
+        builder.Logging.AddFilter("RiskDataPlatform", LogLevel.Information);
+
         builder.Services.AddOpenTelemetry()
             .WithMetrics(metrics =>
             {
@@ -62,6 +68,13 @@ public static class Extensions
             .WithTracing(tracing =>
             {
                 tracing.AddSource(builder.Environment.ApplicationName)
+                    .AddSource("Microsoft.Orleans.Runtime")
+                    .AddSource("Microsoft.Orleans.Application")
+                    .AddSource("RiskDataPlatform.Api")
+                    .AddSource("RiskDataPlatform.Grains")
+                    .AddSource("RiskDataPlatform.Query")
+                    .AddSource("RiskDataPlatform.Arrow")
+                    .AddSource("RiskDataPlatform.Storage")
                     .AddAspNetCoreInstrumentation(tracing =>
                         // Exclude health check requests from tracing
                         tracing.Filter = context =>
