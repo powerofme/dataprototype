@@ -1,0 +1,13 @@
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/bin/Debug/net8.0/RiskDataPlatform.Core.deps.json
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/bin/Debug/net8.0/RiskDataPlatform.Core.dll
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/bin/Debug/net8.0/RiskDataPlatform.Core.pdb
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.csproj.AssemblyReference.cache
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.AssemblyInfoInputs.cache
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.AssemblyInfo.cs
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.csproj.CoreCompileInputs.cache
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.sourcelink.json
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.dll
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/refint/RiskDataPlatform.Core.dll
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/RiskDataPlatform.Core.pdb
+/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/Debug/net8.0/ref/RiskDataPlatform.Core.dll

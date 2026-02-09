@@ -1,0 +1,432 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Grains/RiskDataPlatform.Grains.csproj": {}
+  },
+  "projects": {
+    "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/RiskDataPlatform.Arrow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/RiskDataPlatform.Arrow.csproj",
+        "projectName": "RiskDataPlatform.Arrow",
+        "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/RiskDataPlatform.Arrow.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj"
+              },
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/RiskDataPlatform.Infrastructure.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/RiskDataPlatform.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Apache.Arrow": {
+              "target": "Package",
+              "version": "[16.1.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj",
+        "projectName": "RiskDataPlatform.Core",
+        "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Orleans.Sdk": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Serialization.Abstractions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Grains/RiskDataPlatform.Grains.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Grains/RiskDataPlatform.Grains.csproj",
+        "projectName": "RiskDataPlatform.Grains",
+        "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Grains/RiskDataPlatform.Grains.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Grains/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/RiskDataPlatform.Arrow.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/RiskDataPlatform.Arrow.csproj"
+              },
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj"
+              },
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/RiskDataPlatform.Infrastructure.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/RiskDataPlatform.Infrastructure.csproj"
+              },
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/RiskDataPlatform.Query.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/RiskDataPlatform.Query.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Orleans.Core": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Runtime": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Sdk": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Serialization.Abstractions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/RiskDataPlatform.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/RiskDataPlatform.Infrastructure.csproj",
+        "projectName": "RiskDataPlatform.Infrastructure",
+        "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/RiskDataPlatform.Infrastructure.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.400, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Microsoft.Orleans.Runtime": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/RiskDataPlatform.Query.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/RiskDataPlatform.Query.csproj",
+        "projectName": "RiskDataPlatform.Query",
+        "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/RiskDataPlatform.Query.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Query/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/RiskDataPlatform.Arrow.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Arrow/RiskDataPlatform.Arrow.csproj"
+              },
+              "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj": {
+                "projectPath": "/home/runner/work/dataprototype/dataprototype/src/RiskDataPlatform.Core/RiskDataPlatform.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Apache.Arrow": {
+              "target": "Package",
+              "version": "[16.1.0, )"
+            },
+            "DuckDB.NET.Data": {
+              "target": "Package",
+              "version": "[1.1.3, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
