@@ -12,8 +12,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Orleans.Runtime" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="8.2.0" />
+    <PackageReference Include="Microsoft.Orleans.Runtime" Version="8.2.0" />
     <PackageReference Include="AWSSDK.S3" Version="3.7.400" />
     <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.0" />
   </ItemGroup>

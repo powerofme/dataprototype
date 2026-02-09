@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RiskDataPlatform.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f90371e0e348dab9d699f891abbf057ed3c68ec7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27f1e83039238cd7af680db184bd5294ef4d236a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RiskDataPlatform.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RiskDataPlatform.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

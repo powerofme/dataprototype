@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Orleans.Sdk": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Microsoft.Orleans.Serialization.Abstractions": {
               "target": "Package",
               "version": "[8.2.0, )"

@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Orleans.Sdk": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Microsoft.Orleans.Serialization.Abstractions": {
               "target": "Package",
               "version": "[8.2.0, )"
@@ -123,11 +127,11 @@
             },
             "Microsoft.Orleans.Core.Abstractions": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.2.0, )"
             },
             "Microsoft.Orleans.Runtime": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.2.0, )"
             },
             "System.Diagnostics.DiagnosticSource": {
               "target": "Package",

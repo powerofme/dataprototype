@@ -1576,6 +1576,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.Orleans.Sdk": "8.2.0",
           "Microsoft.Orleans.Serialization.Abstractions": "8.2.0"
         },
         "compile": {
@@ -1591,8 +1592,8 @@
         "dependencies": {
           "AWSSDK.S3": "3.7.400",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "8.0.0",
-          "Microsoft.Orleans.Runtime": "8.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "8.2.0",
+          "Microsoft.Orleans.Runtime": "8.2.0",
           "RiskDataPlatform.Core": "1.0.0",
           "System.Diagnostics.DiagnosticSource": "8.0.0"
         },
